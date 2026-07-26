@@ -7,6 +7,7 @@
   <meta name="description" content="Explore moments captured from sessions, performances, and events at FKG LIVE Entertainment — Lagos' premier entertainment company for DJ services, studio recording, and music production.">
   <meta name="keywords" content="FKG LIVE gallery, DJ performance Lagos, studio sessions Nigeria, recording studio photos, live event entertainment Lagos, music production gallery">
   <meta name="author" content="FKG LIVE Entertainment">
+  <meta name="theme-color" content="#0a0505">
   <meta property="og:title" content="Gallery — FKG LIVE Entertainment | DJ Performances, Studio Sessions, Events">
   <meta property="og:description" content="Moments captured from sessions, performances, and events at FKG LIVE Entertainment.">
   <meta property="og:type" content="website">
@@ -20,6 +21,7 @@
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link rel="icon" type="image/png" href="images/LOGO.png">
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Bangers&family=Nunito:wght@400;600;700;800&display=swap">
   <link rel="stylesheet" href="css/style.css">
 </head>
 <body>
@@ -35,7 +37,7 @@
     <a href="index.html" class="nav-logo">
       <img src="images/LOGO.png" alt="FKG LIVE Entertainment">
     </a>
-    <button class="mobile-toggle" onclick="this.classList.toggle('active'); document.querySelector('.nav-links').classList.toggle('open')"><span></span><span></span><span></span></button>
+    <button class="mobile-toggle" aria-label="Toggle navigation menu" onclick="this.classList.toggle('active'); document.querySelector('.nav-links').classList.toggle('open')"><span></span><span></span><span></span></button>
     <div class="nav-links">
       <a href="index.html">Home</a>
       <a href="services.html">Services</a>
@@ -47,14 +49,16 @@
   </div>
 </nav>
 
+<main>
+
 <!-- PAGE HERO -->
-<div class="page-hero" style="background-image: url('images/studio-keys.jpg');">
+<section class="page-hero" style="background-image: url('images/studio-keys.jpg');">
   <div class="container">
     <div class="section-badge">Gallery</div>
     <h1>See the Vision</h1>
     <p>Moments captured from sessions, performances, and events.</p>
   </div>
-</div>
+</section>
 
 <!-- GALLERY GRID -->
 <section class="section-bg" style="background-image: url('images/studio-mixing.jpg');">
@@ -132,6 +136,8 @@
   </div>
 </section>
 
+</main>
+
 <!-- FOOTER -->
 <footer class="footer">
   <div class="container">
@@ -154,10 +160,10 @@
       </div>
       <div class="footer-col">
         <h4>Services</h4>
-        <a href="services.html#dj-services">DJ Services</a>
-        <a href="services.html#recording-studio">Recording Studio</a>
-        <a href="services.html#music-production">Music Production</a>
-        <a href="services.html#artist-development">Artist Development</a>
+        <a href="services.html">DJ Services</a>
+        <a href="services.html">Recording Studio</a>
+        <a href="services.html">Music Production</a>
+        <a href="services.html">Artist Development</a>
       </div>
       <div class="footer-col">
         <h4>Connect</h4>
@@ -170,7 +176,7 @@
         <h4>Contact</h4>
         <a href="tel:+2348169041057">+234 816 904 1057</a>
         <a href="mailto:info@fkglive.com">info@fkglive.com</a>
-        <a href="#">Lagos, Nigeria</a>
+        <span>Lagos, Nigeria</span>
       </div>
     </div>
     <div class="footer-bottom">
@@ -197,6 +203,11 @@ window.addEventListener('load', () => {
   setTimeout(() => { document.getElementById('splashscreen').classList.add('hide'); }, 2000);
 });
 </script>
+
+<!-- WHATSAPP FLOATING BUTTON -->
+<a href="https://wa.me/2348169041057" class="whatsapp-float" target="_blank" rel="noopener" aria-label="Chat on WhatsApp">
+  <svg viewBox="0 0 32 32" width="28" height="28" fill="#fff"><path d="M16.004 0h-.008C7.174 0 0 7.176 0 16c0 3.5 1.132 6.744 3.054 9.378L1.054 31.25l6.072-1.97A15.912 15.912 0 0 0 16.004 32C24.826 32 32 24.822 32 16S24.826 0 16.004 0zm9.318 22.608c-.39 1.096-1.932 2.008-3.16 2.27-.84.18-1.936.322-5.626-1.21-4.724-1.96-7.756-6.764-7.99-7.076-.226-.312-1.896-2.524-1.896-4.814s1.2-3.41 1.626-3.876c.39-.42.924-.56 1.23-.56.31 0 .62.003.89.016.286.012.668-.108 1.04.792.39.94 1.336 3.248 1.452 3.48.116.232.194.502.038.812-.156.31-.29.502-.58.772-.29.27-.58.604-.83.812-.25.21-.51.436-.216.854.294.42 1.306 2.152 2.804 3.49 1.924 1.722 3.542 2.256 4.022 2.506.48.25.756.21 1.032-.128.276-.338 1.176-1.37 1.488-1.846.312-.476.626-.394 1.06-.236.436.156 2.776 1.308 3.25 1.546.474.238.79.356.91.552.118.196.118 1.136-.272 2.232z"/></svg>
+</a>
 
 </body>
 </html>

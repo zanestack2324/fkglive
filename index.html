@@ -7,18 +7,21 @@
   <meta name="description" content="FKG LIVE is a full-service entertainment company in Lagos offering professional DJ services, recording studio sessions, music production, mixing & mastering, artist development, music promotion, PR campaigns, and live event entertainment for artists, brands, and businesses across Nigeria.">
   <meta name="keywords" content="DJ services Lagos, recording studio Nigeria, music production Lagos, artist development, music promotion, event entertainment Lagos, live DJ booking Nigeria, studio recording, mixing mastering, FKG LIVE, entertainment company Lagos, music marketing, PR campaigns, branding, event DJ hire">
   <meta name="author" content="FKG LIVE Entertainment">
+  <meta name="theme-color" content="#0a0505">
   <meta property="og:title" content="FKG LIVE Entertainment — Professional DJ Services, Recording Studio & Music Production in Lagos">
   <meta property="og:description" content="Full-service entertainment company providing DJ services, studio recording, music production, artist development, music promotion, and live event entertainment across Nigeria.">
   <meta property="og:type" content="website">
   <meta property="og:url" content="https://fkglive.com">
-  <meta property="og:image" content="https://fkglive.com/images/hero-studio.jpg">
+  <meta property="og:image" content="https://fkglive.com/images/hero-bg.jpg">
   <meta name="twitter:card" content="summary_large_image">
   <meta name="twitter:title" content="FKG LIVE Entertainment — Professional DJ & Music Services">
   <meta name="twitter:description" content="Entertainment Without Limits. Professional DJ services, recording studio, music production, artist development, and live event entertainment in Lagos.">
-  <meta name="twitter:image" content="https://fkglive.com/images/hero-studio.jpg">
+  <meta name="twitter:image" content="https://fkglive.com/images/hero-bg.jpg">
   <link rel="canonical" href="https://fkglive.com">
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link rel="preconnect" href="https://fonts.googleapis.com" as="style">
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Bangers&family=Nunito:wght@400;600;700;800&display=swap">
   <link rel="icon" type="image/png" href="images/LOGO.png">
   <link rel="stylesheet" href="css/style.css">
   <script type="application/ld+json">
@@ -26,7 +29,7 @@
     "@context": "https://schema.org",
     "@type": ["Organization", "LocalBusiness"],
     "name": "FKG LIVE Entertainment",
-    "description": "Full-service entertainment company providing professional DJ services, recording studio, music production, artist development, music promotion, and live event entertainment.",
+    "description": "Full-service entertainment company providing professional DJ services, studio recording, music production, artist development, music promotion, and live event entertainment.",
     "url": "https://fkglive.com",
     "telephone": "+2348169041057",
     "email": "info@fkglive.com",
@@ -69,7 +72,7 @@
     <a href="index.html" class="nav-logo">
       <img src="images/LOGO.png" alt="FKG LIVE Entertainment">
     </a>
-    <button class="mobile-toggle" onclick="this.classList.toggle('active'); document.querySelector('.nav-links').classList.toggle('open')"><span></span><span></span><span></span></button>
+    <button class="mobile-toggle" aria-label="Toggle navigation menu" onclick="this.classList.toggle('active'); document.querySelector('.nav-links').classList.toggle('open')"><span></span><span></span><span></span></button>
     <div class="nav-links">
       <a href="index.html" class="active">Home</a>
       <a href="services.html">Services</a>
@@ -84,11 +87,12 @@
 <!-- HERO -->
 <section class="hero">
   <div class="hero-bg">
-    <img src="images/hero-bg.png" alt="FKG LIVE Entertainment">
+    <img src="images/hero-bg.jpg" alt="FKG LIVE Entertainment" width="1920" height="1080">
     <div class="hero-overlay"></div>
   </div>
   <div class="hero-content">
-    <p class="hero-sub">Professional DJ Services • Recording Studio • Music Production • Artist Development • Music Promotion • PR & Event Entertainment</p>
+    <h1>Entertainment <span>Without Limits</span></h1>
+    <p class="hero-sub">Professional DJ Services &bull; Recording Studio &bull; Music Production &bull; Artist Development &bull; Music Promotion &bull; PR &amp; Event Entertainment</p>
     <div class="hero-buttons">
       <a href="contact.html" class="btn btn-primary">Book Now</a>
       <a href="contact.html#contact-form" class="btn btn-outline">Contact Us</a>
@@ -114,12 +118,14 @@
   </div>
 </section>
 
+<main>
+
 <!-- ABOUT PREVIEW -->
 <section class="section-bg" style="background-image: url('images/studio-desk.jpg');">
   <div class="container">
     <div class="about-grid">
       <div class="about-img fade-up">
-        <img src="images/studio-desk.jpg" alt="FKG LIVE Entertainment Interior" loading="lazy">
+        <img src="images/studio-desk.jpg" alt="FKG LIVE Entertainment Interior" loading="lazy" width="800" height="600">
       </div>
       <div class="about-text fade-up stagger-1">
         <div class="section-badge">Who We Are</div>
@@ -142,37 +148,37 @@
     </div>
     <div class="services-grid">
       <div class="service-card fade-up">
-        <div class="service-icon">🎧</div>
+        <div class="service-card-icon">🎧</div>
         <h3>DJ Services</h3>
         <p>Professional DJ services for weddings, corporate events, concerts, and private parties</p>
         <a href="services.html" class="card-link">Learn More →</a>
       </div>
       <div class="service-card fade-up stagger-1">
-        <div class="service-icon">🎙️</div>
+        <div class="service-card-icon">🎙️</div>
         <h3>Recording Studio</h3>
         <p>State-of-the-art recording studio with professional equipment and sound engineering</p>
         <a href="services.html" class="card-link">Learn More →</a>
       </div>
       <div class="service-card fade-up stagger-2">
-        <div class="service-icon">🎵</div>
+        <div class="service-card-icon">🎵</div>
         <h3>Music Production</h3>
         <p>Custom beats, production, mixing, and mastering by experienced producers</p>
         <a href="services.html" class="card-link">Learn More →</a>
       </div>
       <div class="service-card fade-up stagger-3">
-        <div class="service-icon">🎤</div>
+        <div class="service-card-icon">🎤</div>
         <h3>Artist Development</h3>
         <p>Vocal coaching, performance training, image consulting, and career strategy</p>
         <a href="services.html" class="card-link">Learn More →</a>
       </div>
       <div class="service-card fade-up stagger-4">
-        <div class="service-icon">📈</div>
+        <div class="service-card-icon">📈</div>
         <h3>Music Promotion</h3>
         <p>Spotify, Apple Music, YouTube, TikTok promotion and digital marketing</p>
         <a href="services.html" class="card-link">Learn More →</a>
       </div>
       <div class="service-card fade-up stagger-5">
-        <div class="service-icon">🎪</div>
+        <div class="service-card-icon">🎪</div>
         <h3>Event Entertainment</h3>
         <p>Full event entertainment solutions including live performances and DJ bookings</p>
         <a href="services.html" class="card-link">Learn More →</a>
@@ -205,7 +211,7 @@
       </div>
       <div class="why-item fade-up stagger-2">
         <div class="why-num">03</div>
-        <h4>Experienced DJs & Producers</h4>
+        <h4>Experienced DJs &amp; Producers</h4>
         <p>Work with seasoned professionals who have years of experience in the music and entertainment industry.</p>
       </div>
       <div class="why-item fade-up stagger-3">
@@ -232,32 +238,41 @@
   <div class="container">
     <div class="section-header">
       <div class="section-badge">What Clients Say</div>
-      <h2>Trusted by Artists & Brands</h2>
+      <h2>Trusted by Artists &amp; Brands</h2>
       <div class="section-divider"></div>
     </div>
     <div class="testimonials-grid">
       <div class="testimonial-card fade-up">
-        <div class="testimonial-stars">★★★★★</div>
-        <p class="testimonial-quote">"FKG LIVE handled the DJ and sound for our product launch and it was flawless. Their professionalism and energy elevated the entire event. We've booked them for every event since."</p>
+        <div class="stars">★★★★★</div>
+        <blockquote>"FKG LIVE handled the DJ and sound for our product launch and it was flawless. Their professionalism and energy elevated the entire event. We've booked them for every event since."</blockquote>
         <div class="testimonial-author">
-          <h4>Chidinma Okafor</h4>
-          <span>Brand Manager, Luxe Cosmetics</span>
+          <div class="testimonial-avatar">CO</div>
+          <div class="testimonial-info">
+            <h5>Chidinma Okafor</h5>
+            <p>Brand Manager, Luxe Cosmetics</p>
+          </div>
         </div>
       </div>
       <div class="testimonial-card fade-up stagger-1">
-        <div class="testimonial-stars">★★★★★</div>
-        <p class="testimonial-quote">"From recording to promotion, FKG LIVE took my music from the studio to over 100K streams. Their artist development program changed my career trajectory completely."</p>
+        <div class="stars">★★★★★</div>
+        <blockquote>"From recording to promotion, FKG LIVE took my music from the studio to over 100K streams. Their artist development program changed my career trajectory completely."</blockquote>
         <div class="testimonial-author">
-          <h4>Adebayo Williams</h4>
-          <span>Afrobeats Artist</span>
+          <div class="testimonial-avatar">AW</div>
+          <div class="testimonial-info">
+            <h5>Adebayo Williams</h5>
+            <p>Afrobeats Artist</p>
+          </div>
         </div>
       </div>
       <div class="testimonial-card fade-up stagger-2">
-        <div class="testimonial-stars">★★★★★</div>
-        <p class="testimonial-quote">"Our wedding was absolutely perfect thanks to FKG LIVE. The DJ read the room perfectly, the sound was crystal clear, and our guests couldn't stop dancing. Highly recommended!"</p>
+        <div class="stars">★★★★★</div>
+        <blockquote>"Our wedding was absolutely perfect thanks to FKG LIVE. The DJ read the room perfectly, the sound was crystal clear, and our guests couldn't stop dancing. Highly recommended!"</blockquote>
         <div class="testimonial-author">
-          <h4>Ngozi & Emeka Nwosu</h4>
-          <span>Wedding Clients</span>
+          <div class="testimonial-avatar">NE</div>
+          <div class="testimonial-info">
+            <h5>Ngozi &amp; Emeka Nwosu</h5>
+            <p>Wedding Clients</p>
+          </div>
         </div>
       </div>
     </div>
@@ -265,7 +280,7 @@
 </section>
 
 <!-- CTA BANNER -->
-<section class="section-bg" style="background-image: url('images/live-recording.png');">
+<section class="section-bg" style="background-image: url('images/live-recording.jpg');">
   <div class="container">
     <div class="cta-banner fade-up">
       <h2>Ready to Elevate Your Sound?</h2>
@@ -298,6 +313,8 @@
   </div>
 </section>
 
+</main>
+
 <!-- FOOTER -->
 <footer class="footer">
   <div class="container">
@@ -320,10 +337,10 @@
       </div>
       <div class="footer-col">
         <h4>Services</h4>
-        <a href="services.html#dj-services">DJ Services</a>
-        <a href="services.html#recording-studio">Recording Studio</a>
-        <a href="services.html#music-production">Music Production</a>
-        <a href="services.html#artist-development">Artist Development</a>
+        <a href="services.html">DJ Services</a>
+        <a href="services.html">Recording Studio</a>
+        <a href="services.html">Music Production</a>
+        <a href="services.html">Artist Development</a>
       </div>
       <div class="footer-col">
         <h4>Connect</h4>
@@ -336,7 +353,7 @@
         <h4>Contact</h4>
         <a href="tel:+2348169041057">+234 816 904 1057</a>
         <a href="mailto:info@fkglive.com">info@fkglive.com</a>
-        <a href="#">Lagos, Nigeria</a>
+        <span>Lagos, Nigeria</span>
       </div>
     </div>
     <div class="footer-bottom">
@@ -349,6 +366,11 @@
   </div>
 </footer>
 
+<!-- WHATSAPP FLOATING BUTTON -->
+<a href="https://wa.me/2348169041057" class="whatsapp-float" target="_blank" rel="noopener" aria-label="Chat on WhatsApp">
+  <svg viewBox="0 0 32 32" width="28" height="28" fill="#fff"><path d="M16.004 0h-.008C7.174 0 0 7.176 0 16c0 3.5 1.132 6.744 3.054 9.378L1.054 31.25l6.072-1.97A15.912 15.912 0 0 0 16.004 32C24.826 32 32 24.822 32 16S24.826 0 16.004 0zm9.318 22.608c-.39 1.096-1.932 2.008-3.16 2.27-.84.18-1.936.322-5.626-1.21-4.724-1.96-7.756-6.764-7.99-7.076-.226-.312-1.896-2.524-1.896-4.814s1.2-3.41 1.626-3.876c.39-.42.924-.56 1.23-.56.31 0 .62.003.89.016.286.012.668-.108 1.04.792.39.94 1.336 3.248 1.452 3.48.116.232.194.502.038.812-.156.31-.29.502-.58.772-.29.27-.58.604-.83.812-.25.21-.51.436-.216.854.294.42 1.306 2.152 2.804 3.49 1.924 1.722 3.542 2.256 4.022 2.506.48.25.756.21 1.032-.128.276-.338 1.176-1.37 1.488-1.846.312-.476.626-.394 1.06-.236.436.156 2.776 1.308 3.25 1.546.474.238.79.356.91.552.118.196.118 1.136-.272 2.232z"/></svg>
+</a>
+
 <script>
 window.addEventListener('scroll', () => {
   document.getElementById('navbar').classList.toggle('scrolled', window.scrollY > 50);
@@ -357,8 +379,6 @@ const observer = new IntersectionObserver(entries => {
   entries.forEach(e => { if (e.isIntersecting) { e.target.classList.add('visible'); } });
 }, { threshold: 0.1 });
 document.querySelectorAll('.fade-up').forEach(el => observer.observe(el));
-</script>
-<script>
 window.addEventListener('load', () => {
   setTimeout(() => { document.getElementById('splashscreen').classList.add('hide'); }, 2000);
 });
