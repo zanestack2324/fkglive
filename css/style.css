@@ -719,9 +719,11 @@ section { padding: 100px 0; }
    FOOTER
    ================================ */
 .footer {
-  background: var(--bg-secondary); border-top: 1px solid rgba(160, 140, 110, 0.15); padding: 16px 0; position: relative;
+  background: var(--bg-secondary); background-image: url('../images/footer-bg.jpg'); background-size: cover; background-position: center; border-top: 1px solid rgba(160, 140, 110, 0.15); padding: 16px 0; position: relative;
 }
-.footer::before { display: none; }
+.footer::before {
+  content: ''; position: absolute; inset: 0; z-index: 0; background: rgba(10, 5, 5, 0.88);
+}
 .footer > .container { position: relative; z-index: 1; }
 .footer-row {
   display: flex; align-items: center; justify-content: space-between; flex-wrap: wrap; gap: 12px;
