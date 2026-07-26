@@ -374,10 +374,10 @@ section { padding: 100px 0; }
   background: var(--red); color: var(--bg-primary);
 }
 .service-card h3 {
-  font-family: 'Bangers', cursive; font-size: 1.1rem; font-weight: 700;
-  color: var(--white); margin-bottom: 10px;
+  font-family: 'Bangers', cursive; font-size: 1.3rem; font-weight: 700;
+  color: var(--white); margin-bottom: 12px; letter-spacing: 1px;
 }
-.service-card p { font-size: 0.85rem; color: var(--medium); line-height: 1.7; }
+.service-card p { font-size: 1rem; color: var(--light); line-height: 1.7; }
 
 /* ================================
    COURSES GRID
@@ -833,6 +833,185 @@ section { padding: 100px 0; }
 .market-row.highlight .price { color: var(--red); font-size: 1.1rem; }
 
 /* ================================
+   LEGENDARY DOODLE PAPER BANNER
+   ================================ */
+.legendary-banner {
+  padding: 60px 24px;
+  display: flex;
+  justify-content: center;
+}
+
+.doodle-paper {
+  position: relative;
+  max-width: 720px;
+  width: 100%;
+  background:
+    repeating-linear-gradient(
+      0deg,
+      transparent,
+      transparent 31px,
+      rgba(180, 160, 140, 0.15) 31px,
+      rgba(180, 160, 140, 0.15) 32px
+    ),
+    repeating-linear-gradient(
+      90deg,
+      transparent,
+      transparent 31px,
+      rgba(180, 160, 140, 0.06) 31px,
+      rgba(180, 160, 140, 0.06) 32px
+    ),
+    linear-gradient(135deg, #f5f0e8 0%, #ede6da 30%, #f2ece2 60%, #e8e0d4 100%);
+  background-color: #f0e9de;
+  border-radius: 4px;
+  padding: 56px 48px;
+  text-align: center;
+  box-shadow:
+    0 2px 20px rgba(0, 0, 0, 0.3),
+    inset 0 0 60px rgba(160, 140, 110, 0.08);
+}
+
+/* red margin line on left */
+.doodle-paper::before {
+  content: '';
+  position: absolute;
+  left: 60px;
+  top: 0;
+  bottom: 0;
+  width: 2px;
+  background: rgba(220, 80, 80, 0.25);
+  z-index: 1;
+}
+
+/* subtle paper grain */
+.doodle-paper::after {
+  content: '';
+  position: absolute;
+  inset: 0;
+  background:
+    url("data:image/svg+xml,%3Csvg width='200' height='200' xmlns='http://www.w3.org/2000/svg'%3E%3Cfilter id='n'%3E%3CfeTurbulence type='fractalNoise' baseFrequency='0.9' numOctaves='4' stitchTiles='stitch'/%3E%3C/filter%3E%3Crect width='100%25' height='100%25' filter='url(%23n)' opacity='0.03'/%3E%3C/svg%3E");
+  pointer-events: none;
+  border-radius: 4px;
+}
+
+/* heading — handwritten imperfect style */
+.doodle-heading {
+  font-family: 'Caveat', cursive;
+  font-size: clamp(2.2rem, 6vw, 3.8rem);
+  font-weight: 700;
+  color: #1a1a1a;
+  line-height: 1.2;
+  margin: 12px 0 16px;
+  transform: rotate(-0.8deg);
+  letter-spacing: -0.5px;
+  text-shadow: 0.5px 0.5px 0 rgba(0,0,0,0.04);
+}
+
+.doodle-sub {
+  font-family: 'Caveat', cursive;
+  font-size: 1.3rem;
+  color: #888;
+  margin-bottom: 0;
+}
+
+.doodle-text {
+  font-family: 'Nunito', sans-serif;
+  font-size: 1.05rem;
+  color: #666;
+  margin-bottom: 28px;
+  line-height: 1.6;
+}
+
+.legendary-btn {
+  background: var(--red) !important;
+  color: #fff !important;
+  padding: 14px 40px !important;
+  font-size: 1rem !important;
+  font-weight: 700 !important;
+  border-radius: 50px !important;
+  border: none !important;
+  display: inline-block !important;
+  text-decoration: none !important;
+  transition: var(--transition);
+  box-shadow: 0 4px 20px rgba(224, 0, 0, 0.3);
+}
+
+.legendary-btn:hover {
+  transform: translateY(-2px) !important;
+  box-shadow: 0 6px 28px rgba(224, 0, 0, 0.45) !important;
+}
+
+/* ---- TORN / BURNT PAPER EDGES ---- */
+.torn-edge {
+  position: absolute;
+  left: -8px;
+  right: -8px;
+  height: 28px;
+  z-index: 2;
+  pointer-events: none;
+}
+
+.torn-edge-top {
+  top: -14px;
+  background: linear-gradient(to bottom, var(--bg-primary) 0%, transparent 100%);
+  mask-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 800 28'%3E%3Cpath d='M0 28 C20 10 40 18 60 8 C80 0 100 14 120 6 C140 0 160 16 180 4 C200 0 220 12 240 6 C260 0 280 14 300 8 C320 2 340 16 360 4 C380 0 400 12 420 6 C440 0 460 18 480 8 C500 0 520 14 540 6 C560 0 580 16 600 4 C620 0 640 12 660 8 C680 2 700 16 720 4 C740 0 760 14 780 6 C800 0 800 0 800 0 L800 28 Z' fill='white'/%3E%3C/svg%3E");
+  mask-size: 100% 100%;
+  -webkit-mask-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 800 28'%3E%3Cpath d='M0 28 C20 10 40 18 60 8 C80 0 100 14 120 6 C140 0 160 16 180 4 C200 0 220 12 240 6 C260 0 280 14 300 8 C320 2 340 16 360 4 C380 0 400 12 420 6 C440 0 460 18 480 8 C500 0 520 14 540 6 C560 0 580 16 600 4 C620 0 640 12 660 8 C680 2 700 16 720 4 C740 0 760 14 780 6 C800 0 800 0 800 0 L800 28 Z' fill='white'/%3E%3C/svg%3E");
+  -webkit-mask-size: 100% 100%;
+}
+
+.torn-edge-bottom {
+  bottom: -14px;
+  background: linear-gradient(to top, var(--bg-primary) 0%, transparent 100%);
+  mask-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 800 28'%3E%3Cpath d='M0 0 C20 18 40 10 60 20 C80 28 100 14 120 22 C140 28 160 12 180 24 C200 28 220 16 240 22 C260 28 280 14 300 20 C320 26 340 12 360 24 C380 28 400 16 420 22 C440 28 460 10 480 20 C500 28 520 14 540 22 C560 28 580 12 600 24 C620 28 640 16 660 20 C680 26 700 12 720 24 C740 28 760 14 780 22 C800 28 800 28 800 28 L800 0 Z' fill='white'/%3E%3C/svg%3E");
+  mask-size: 100% 100%;
+  -webkit-mask-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 800 28'%3E%3Cpath d='M0 0 C20 18 40 10 60 20 C80 28 100 14 120 22 C140 28 160 12 180 24 C200 28 220 16 240 22 C260 28 280 14 300 20 C320 26 340 12 360 24 C380 28 400 16 420 22 C440 28 460 10 480 20 C500 28 520 14 540 22 C560 28 580 12 600 24 C620 28 640 16 660 20 C680 26 700 12 720 24 C740 28 760 14 780 22 C800 28 800 28 800 28 L800 0 Z' fill='white'/%3E%3C/svg%3E");
+  -webkit-mask-size: 100% 100%;
+}
+
+/* burnt / scorched overlay on edges */
+.torn-edge-top::after,
+.torn-edge-bottom::after {
+  content: '';
+  position: absolute;
+  left: 0;
+  right: 0;
+  height: 12px;
+}
+
+.torn-edge-top::after {
+  bottom: 0;
+  background: linear-gradient(
+    to bottom,
+    transparent,
+    rgba(80, 40, 10, 0.12) 40%,
+    rgba(60, 30, 5, 0.06) 70%,
+    transparent
+  );
+}
+
+.torn-edge-bottom::after {
+  top: 0;
+  background: linear-gradient(
+    to top,
+    transparent,
+    rgba(80, 40, 10, 0.12) 40%,
+    rgba(60, 30, 5, 0.06) 70%,
+    transparent
+  );
+}
+
+/* scorched corners */
+.doodle-paper {
+  border-image: linear-gradient(
+    135deg,
+    rgba(120, 60, 10, 0.15) 0%,
+    transparent 8%,
+    transparent 92%,
+    rgba(100, 50, 8, 0.12) 100%
+  ) 1;
+}
+
+/* ================================
    ANIMATIONS
    ================================ */
 .fade-up { opacity: 0; transform: translateY(30px); transition: opacity 0.6s ease, transform 0.6s ease; }
@@ -940,6 +1119,7 @@ section { padding: 100px 0; }
   .timeline::before { left: 20px; }
   .timeline-item { width: 100%; padding-left: 52px !important; padding-right: 0 !important; justify-content: flex-start !important; margin-left: 0 !important; }
   .timeline-dot { left: 12px !important; right: auto !important; }
+  .doodle-paper { padding: 48px 32px; }
 }
 
 /* ================================
@@ -966,4 +1146,7 @@ section { padding: 100px 0; }
   .btn { padding: 12px 24px; font-size: 0.8rem; }
   .pricing-card { padding: 28px 20px; }
   .stat-number { font-size: 2.2rem; }
+  .doodle-paper { padding: 40px 24px; }
+  .doodle-heading { font-size: 2rem; transform: rotate(-0.5deg); }
+  .doodle-paper::before { left: 24px; }
 }
