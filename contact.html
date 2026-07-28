@@ -22,7 +22,7 @@
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link rel="icon" type="image/png" href="images/LOGO.png">
   <link rel="sitemap" type="application/xml" href="sitemap.xml">
-  <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Bangers&family=Lato:wght@400;700;900&family=Nunito:wght@400;600;700;800&display=swap">
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Caveat:wght@400;700&family=Lato:wght@400;700;900&family=Nunito:wght@400;600;700;800&display=swap">
   <link rel="stylesheet" href="css/style.css">
 </head>
 <body>
@@ -30,6 +30,14 @@
 <!-- Splashscreen -->
 <div class="splashscreen" id="splashscreen">
   <img src="images/LOGO.png" alt="FKG LIVE Entertainment">
+  <div class="splash-loader">
+    <div class="circle"></div>
+    <div class="circle"></div>
+    <div class="circle"></div>
+    <div class="shadow"></div>
+    <div class="shadow"></div>
+    <div class="shadow"></div>
+  </div>
 </div>
 
 <!-- NAVIGATION -->
@@ -181,15 +189,22 @@
 </section>
 
 <!-- CTA -->
-<section class="section-bg" style="background-image: url('images/studio-mixing.jpg');">
-  <div class="container" style="display: flex; justify-content: center;">
-    <div class="doodle-paper fade-up">
-      <h2 class="doodle-heading">Follow Us on Social Media</h2>
-      <p class="doodle-text">Stay updated with our latest sessions, performances, and behind-the-scenes content.</p>
-      <div class="social-links" style="margin-top: 24px;">
-        <a href="https://www.instagram.com/live.xdigital" class="social-link" target="_blank" rel="noopener" aria-label="Instagram"><svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect x="2" y="2" width="20" height="20" rx="5" ry="5"/><path d="M16 11.37A4 4 0 1 1 12.63 8 4 4 0 0 1 16 11.37z"/><line x1="17.5" y1="6.5" x2="17.51" y2="6.5"/></svg></a>
-        <a href="https://tiktok.com/@fkg_live" class="social-link" target="_blank" rel="noopener" aria-label="TikTok"><svg width="20" height="20" viewBox="0 0 24 24" fill="currentColor"><path d="M19.59 6.69a4.83 4.83 0 0 1-3.77-4.25V2h-3.45v13.67a2.89 2.89 0 0 1-2.88 2.5 2.89 2.89 0 0 1-2.89-2.89 2.89 2.89 0 0 1 2.89-2.89c.28 0 .54.04.79.1v-3.5a6.37 6.37 0 0 0-.79-.05A6.34 6.34 0 0 0 3.15 15.2a6.34 6.34 0 0 0 6.34 6.34 6.34 6.34 0 0 0 6.34-6.34V8.73a8.19 8.19 0 0 0 3.76.92V6.2a4.83 4.83 0 0 1-3.76.49z"/></svg></a>
-        <a href="https://www.youtube.com/@FKG_LIVEDIGITALSTUDIOS" class="social-link" target="_blank" rel="noopener" aria-label="YouTube"><svg width="20" height="20" viewBox="0 0 24 24" fill="currentColor"><path d="M23.498 6.186a3.016 3.016 0 0 0-2.122-2.136C19.505 3.545 12 3.545 12 3.545s-7.505 0-9.377.505A3.017 3.017 0 0 0 .502 6.186C0 8.07 0 12 0 12s0 3.93.502 5.814a3.016 3.016 0 0 0 2.122 2.136c1.871.505 9.376.505 9.376.505s7.505 0 9.377-.505a3.015 3.015 0 0 0 2.122-2.136C24 15.93 24 12 24 12s0-3.93-.502-5.814zM9.545 15.568V8.432L15.818 12l-6.273 3.568z"/></svg></a>
+<section class="section-bg cta-section-bg" style="background-image: url('images/studio-mixing.jpg');">
+  <div class="container">
+    <div class="legendary-banner">
+      <div class="doodle-paper">
+        <div class="torn-edge torn-edge-top"></div>
+        <div class="doodle-content">
+          <p class="doodle-sub">Stay in the loop</p>
+          <h2 class="doodle-heading">Follow Us on Social Media</h2>
+          <p class="doodle-text">Stay updated with our latest sessions, performances, and behind-the-scenes content.</p>
+          <div class="social-links" style="margin-top: 24px;">
+            <a href="https://www.instagram.com/live.xdigital" class="social-link" target="_blank" rel="noopener" aria-label="Instagram"><svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect x="2" y="2" width="20" height="20" rx="5" ry="5"/><path d="M16 11.37A4 4 0 1 1 12.63 8 4 4 0 0 1 16 11.37z"/><line x1="17.5" y1="6.5" x2="17.51" y2="6.5"/></svg></a>
+            <a href="https://tiktok.com/@fkg_live" class="social-link" target="_blank" rel="noopener" aria-label="TikTok"><svg width="20" height="20" viewBox="0 0 24 24" fill="currentColor"><path d="M19.59 6.69a4.83 4.83 0 0 1-3.77-4.25V2h-3.45v13.67a2.89 2.89 0 0 1-2.88 2.5 2.89 2.89 0 0 1-2.89-2.89 2.89 2.89 0 0 1 2.89-2.89c.28 0 .54.04.79.1v-3.5a6.37 6.37 0 0 0-.79-.05A6.34 6.34 0 0 0 3.15 15.2a6.34 6.34 0 0 0 6.34 6.34 6.34 6.34 0 0 0 6.34-6.34V8.73a8.19 8.19 0 0 0 3.76.92V6.2a4.83 4.83 0 0 1-3.76.49z"/></svg></a>
+            <a href="https://www.youtube.com/@FKG_LIVEDIGITALSTUDIOS" class="social-link" target="_blank" rel="noopener" aria-label="YouTube"><svg width="20" height="20" viewBox="0 0 24 24" fill="currentColor"><path d="M23.498 6.186a3.016 3.016 0 0 0-2.122-2.136C19.505 3.545 12 3.545 12 3.545s-7.505 0-9.377.505A3.017 3.017 0 0 0 .502 6.186C0 8.07 0 12 0 12s0 3.93.502 5.814a3.016 3.016 0 0 0 2.122 2.136c1.871.505 9.376.505 9.376.505s7.505 0 9.377-.505a3.015 3.015 0 0 0 2.122-2.136C24 15.93 24 12 24 12s0-3.93-.502-5.814zM9.545 15.568V8.432L15.818 12l-6.273 3.568z"/></svg></a>
+          </div>
+        </div>
+        <div class="torn-edge torn-edge-bottom"></div>
       </div>
     </div>
   </div>

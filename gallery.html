@@ -22,7 +22,7 @@
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link rel="icon" type="image/png" href="images/LOGO.png">
   <link rel="sitemap" type="application/xml" href="sitemap.xml">
-  <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Bangers&family=Lato:wght@400;700;900&family=Nunito:wght@400;600;700;800&display=swap">
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Caveat:wght@400;700&family=Lato:wght@400;700;900&family=Nunito:wght@400;600;700;800&display=swap">
   <link rel="stylesheet" href="css/style.css">
 </head>
 <body>
@@ -30,6 +30,14 @@
 <!-- Splashscreen -->
 <div class="splashscreen" id="splashscreen">
   <img src="images/LOGO.png" alt="FKG LIVE Entertainment">
+  <div class="splash-loader">
+    <div class="circle"></div>
+    <div class="circle"></div>
+    <div class="circle"></div>
+    <div class="shadow"></div>
+    <div class="shadow"></div>
+    <div class="shadow"></div>
+  </div>
 </div>
 
 <!-- NAVIGATION -->
@@ -128,12 +136,19 @@
 </section>
 
 <!-- CTA -->
-<section class="section-bg" style="background-image: url('images/studio-performance.jpg');">
+<section class="section-bg cta-section-bg" style="background-image: url('images/studio-performance.jpg');">
   <div class="container">
-    <div class="cta-banner fade-up">
-      <h2>Want to Be Featured?</h2>
-      <p>Whether it's a session, event, or performance — we'd love to capture your moment.</p>
-      <a href="contact.html" class="btn btn-primary">Get in Touch</a>
+    <div class="legendary-banner">
+      <div class="doodle-paper">
+        <div class="torn-edge torn-edge-top"></div>
+        <div class="doodle-content">
+          <p class="doodle-sub">Your moment awaits</p>
+          <h2 class="doodle-heading">Want to Be Featured?</h2>
+          <p class="doodle-text">Whether it's a session, event, or performance, we'd love to capture your moment.</p>
+          <a href="contact.html" class="btn btn-primary legendary-btn">Get in Touch</a>
+        </div>
+        <div class="torn-edge torn-edge-bottom"></div>
+      </div>
     </div>
   </div>
 </section>
